@@ -31,6 +31,8 @@ manifest:
       url-base: https://github.com/nanopb
     - name: alexa
       url-base: https://github.com/alexa
+    - name: nordicsemi
+      url-base: https://github.com/NordicSemiconductor
     - name: demonrf
       url-base: https://github.com/quanbui137414/demonrf
 
