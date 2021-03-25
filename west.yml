@@ -31,8 +31,8 @@ manifest:
       url-base: https://github.com/nanopb
     - name: alexa
       url-base: https://github.com/alexa
-    - name: nordicsemi
-      url-base: https://github.com/NordicSemiconductor
+    - name: demonrf
+      url-base: https://github.com/quanbui137414/demonrf
 
   # If not otherwise specified, the projects below should be obtained
   # from the ncs remote.
@@ -150,11 +150,14 @@ manifest:
       revision: 18f2f3ce0cedc66e00215198efc08eefc052074b
       groups:
       - homekit
+    - name: sdk-nrf
+      path: nrf
+      west-commands: scripts/west-commands.yml
+      revision: v1.5.0-rc1
 
   # West-related configuration for the nrf repository.
   self:
     # This repository should be cloned to ncs/nrf.
-    path: nrf
+    path: test
     # This line configures west extensions which are currently only
     # for internal use by NCS maintainers.
-    west-commands: scripts/west-commands.yml
